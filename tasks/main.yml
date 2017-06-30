@@ -1,0 +1,13 @@
+---
+- git:
+    repo: 'git://git.openstack.org/openstack-dev/devstack.git'
+    dest: ./devstack
+
+- template:
+    src: local.conf.j2
+    dest: ./devstack/local.conf
+
+- shell: ./stack.sh
+  args:
+    chdir: ./devstack
+    creates: /opt/stack

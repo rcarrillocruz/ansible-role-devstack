@@ -1,0 +1,5 @@
+---
+ansible_role_devstack_admin_password: openstack
+ansible_role_devstack_database_password: openstack
+ansible_role_devstack_rabbit_password: openstack
+ansible_role_devstack_service_password: openstack
